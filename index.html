@@ -86,9 +86,8 @@
         }
 
         window.onload = function () {
-            alert(warning);
             document.getElementById("number5").value = number5;
-
+            alert(warning);
             //禁止除微信浏览器之外浏览器访问
             var ua = navigator.userAgent.toLowerCase();
             var isWeixin = ua.indexOf('micromessenger') != -1;
