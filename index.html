@@ -1,0 +1,409 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=350, initial-scale=1.0, maximum-scale=11.0, .0, " id="mixia_vpid">
+    <title>郑州大学数据中台2021</title>
+
+
+    <style>
+        BODY {width:350px;margin:0px auto; font-size:12px;font-family:"宋体";}
+        #bak_1{MARGIN:0 auto;left:0;WIDTH:350px;min-HEIGHT:540px;}
+        A:link {COLOR: #333333; TEXT-DECORATION: none;font-size:12px;}
+        A:visited {COLOR: #333333; TEXT-DECORATION: none;font-size:12px;}
+        A:hover {COLOR: #FF0000;TEXT-DECORATION: none; font-size:12px;}
+        .urls6h {COLOR: #0000FF;font-size:14px;}
+        #bok_1 {MARGIN:0 auto; left: 0;WIDTH: 350px; min-HEIGHT:282px;}
+        #mt_1 {WIDTH: 100%; HEIGHT: 45px;background:url(https://jksb.v.zzu.edu.cn/imagesss/logo59.gif);}
+        .mt_2 {WIDTH: 100%; HEIGHT: 5px;background:url(https://jksb.v.zzu.edu.cn/imagesss/bar_618.gif);}
+        #mt_5 {WIDTH: 100%; min-HEIGHT: 190px;background-color:#f6f6f6;}
+        .mt_3 {WIDTH: 100%; HEIGHT: 28px;}
+        .mt_3a {WIDTH: 30px; HEIGHT: 100%; float:left;}
+        .mt_3b {WIDTH: 90px;HEIGHT: 100%; float:left;font-size:14px;COLOR: #333333;text-align:center;line-height:28px;}
+        .mt_3c {WIDTH: 210px;HEIGHT: 100%; float:left;font-size:14px;COLOR: #0000FF;line-height:28px;}
+        .mt_3d {HEIGHT: 100%;float:right;}
+        .mt_3e {WIDTH: 100%;HEIGHT: 100%; font-size:14px;COLOR: #333333;text-align:center;line-height:28px;}
+        .mt_4 {WIDTH: 100%;min-HEIGHT: 56px; font-size:12px;COLOR: #333333;line-height:18px;}
+        .mt_6 {WIDTH: 100%;HEIGHT: 44px; font-size:12px;COLOR: #666666;line-height:18px;text-align:center;}
+        .bb2 {font-family:"宋体";font-size:12px;color:#118e00;border:#1df600 1px solid;BACKGROUND-color:#d8ffd3;}
+        .bb3 {font-family:"宋体";font-size:12px;color:#022ad9;border:#0065fc 1px solid;BACKGROUND-color:#c9dfff;}}
+    </style>
+
+    <style type="text/css">
+        .hes1{width:165px;height:100%;line-height:20px;font-size:14px;color:#008a24;text-align:center;background-color:#a3fdba;float:left;border-radius:10px;}
+        .hes2{width:165px;height:100%;line-height:20px;font-size:14px;color:#909;text-align:center;background-color:#c4c4c4;float:left;border-radius:10px;}
+        .yim1{width:165px;height:100%;line-height:20px;font-size:14px;color:#005ddc;text-align:center;background-color:#bad7ff;float:left;border-radius:10px;}
+        .yim2{width:165px;height:100%;line-height:20px;font-size:14px;color:#909;text-align:center;background-color:#c4c4c4;float:left;border-radius:10px;}
+        .bar916{width:100%;height:36px;line-height:18px;font-size:12px;color:#777;text-align:center}
+    </style>
+
+    <script type="text/javascript">
+
+        var warning = "本界面仅供学习使用" + "\n" + "请勿用于其他用途" + "\n" +"9月24日（星期六）已更新"+ "\n" +"如非该日期请修改左下五位数字";
+        var number5 = "20356";
+
+        var color1,color2,color3,color4 = "#ffff00";
+        var color_in1 = "#bfffc8";
+        var color_in2 = "#390";
+        var color_in3 = "#070";
+        var color_out1 = "#aab0fe";
+        var color_out2 = "#0012ff";
+        var color_out3 = "#bd04c2";
+
+        var stu_faculty = "你的院系";
+        var stu_name = "你的姓名";
+        var stu_id = "批准出入校园学生";
+        var stu_picture = "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201506%2F07%2F20150607171001_nauwT.thumb.1000_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653364166&t=29fe1130fe83c427d11a07134f7d5deb";
+        var stu_picture_change;
+        var number_picture;
+
+        //保存出入地点
+        var place1 ="主校区大门东门.";
+        var place2 ;
+        var color1 ;
+        var color2 ;
+        var color3 ;
+        var number_picture="https://jksb.v.zzu.edu.cn/imagesss/title316_00001.png";
+
+        var d = new Date();
+        var data_month = (d.getMonth()+1)<10?"0"+(d.getMonth()+1):d.getMonth()+1; //月数为个位数则补0
+        var data_day = d.getDate()<10?"0"+d.getDate():d.getDate(); //天数为个位数则补0
+        var data_hour = d.getHours()<10?"0"+d.getHours():d.getHours(); //小时为个位数则补0
+        var data_min = d.getMinutes()<10?"0"+d.getMinutes():d.getMinutes(); //分钟为个位数则补0
+
+        var yesterday = new Date(d.getTime() - 24*60*60*1000);
+        var data_year_pre = yesterday.getFullYear();
+        var data_month_pre = (yesterday.getMonth()+1)<10?"0"+(yesterday.getMonth()+1):yesterday.getMonth()+1; //月数为个位数则补0
+        var data_day_pre = yesterday.getDate()<10?"0"+yesterday.getDate():yesterday.getDate(); //天数为个位数则补0
+
+
+        function changepic() {
+            var reads= new FileReader();
+            f=document.getElementById('file').files[0];
+            reads.readAsDataURL(f);
+            reads.onload=function (e) {
+                stu_picture_change=this.result;
+            };
+        }
+
+        window.onload = function () {
+            alert(warning);
+            document.getElementById("number5").value = number5;
+
+            //禁止除微信浏览器之外浏览器访问
+            var ua = navigator.userAgent.toLowerCase();
+            var isWeixin = ua.indexOf('micromessenger') != -1;
+            if (!isWeixin) {
+                window.location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=888"
+            }
+
+            document.getElementById("btnlogin1").onclick=function () {
+                var stu_username = document.getElementById("stu_username").value;
+                var stu_password = document.getElementById("stu_password").value;
+                var number5 = document.getElementById("number5").value;
+
+            //密码判定进出
+            if(stu_password == "bjin"){
+                document.getElementById("init").style.display="none";
+                document.getElementById("bak_1").style.display="block";
+                color1 = color_in1;
+                color2 = color_in2;
+                color3 = color_in3;
+                place1 = "北校区大门东门.";
+                place2 = "入口";
+                // document.getElementById("warning").innerHTML="提醒：未检索到你今日出校记录";
+                // document.getElementById("warning").style.color="#FF0000";
+                document.getElementById("gov").style.display="block";
+            }
+            else if(stu_password == "djin"){
+                document.getElementById("init").style.display="none";
+                document.getElementById("bak_1").style.display="block";
+                color1 = color_in1;
+                color2 = color_in2;
+                color3 = color_in3;
+                place1 = "东校区大门西门.";
+                place2 = "入口";
+                // document.getElementById("warning").innerHTML="提醒：未检索到你今日出校记录";
+                // document.getElementById("warning").style.color="#FF0000";
+                document.getElementById("gov").style.display="block";
+            }
+            else if(stu_password == "beimenjin"){
+                document.getElementById("init").style.display="none";
+                document.getElementById("bak_1").style.display="block";
+                color1 = color_in1;
+                color2 = color_in2;
+                color3 = color_in3;
+                place1 = "主校区大门北门.";
+                place2 = "入口";
+                // document.getElementById("warning").innerHTML="提醒：未检索到你今日出校记录";
+                // document.getElementById("warning").style.color="#FF0000";
+                document.getElementById("gov").style.display="block";
+            }
+            else if(stu_password == "chu") {
+                document.getElementById("init").style.display="none";
+                document.getElementById("bak_1").style.display="block";
+                color1 = color_out1;
+                color2 = color_out2;
+                color3 = color_out3;
+                place1 = "主校区大门东门.";
+                place2 = "出口";
+                // document.getElementById("warning").innerHTML="关注“郑州大学网络管理中心”微信公众号可提醒健康打卡";
+                // document.getElementById("warning").style.color="#666666";
+                document.getElementById("gov").style.display="none";
+            }
+            else if(stu_password == "beimenchu") {
+                document.getElementById("init").style.display="none";
+                document.getElementById("bak_1").style.display="block";
+                color1 = color_out1;
+                color2 = color_out2;
+                color3 = color_out3;
+                place1 = "主校区大门北门.";
+                place2 = "出口";
+                // document.getElementById("warning").innerHTML="关注“郑州大学网络管理中心”微信公众号可提醒健康打卡";
+                // document.getElementById("warning").style.color="#666666";
+                document.getElementById("gov").style.display="none";
+            }
+            else if(stu_password == "bchu") {
+                document.getElementById("init").style.display="none";
+                document.getElementById("bak_1").style.display="block";
+                color1 = color_out1;
+                color2 = color_out2;
+                color3 = color_out3;
+                place1 = "北校区大门东门.";
+                place2 = "出口";
+                // document.getElementById("warning").innerHTML="关注“郑州大学网络管理中心”微信公众号可提醒健康打卡";
+                // document.getElementById("warning").style.color="#666666";
+                document.getElementById("gov").style.display="none";
+            }
+            else if(stu_password == "dchu") {
+                document.getElementById("init").style.display="none";
+                document.getElementById("bak_1").style.display="block";
+                color1 = color_out1;
+                color2 = color_out2;
+                color3 = color_out3;
+                place1 = "东校区大门西门.";
+                place2 = "出口";
+                // document.getElementById("warning").innerHTML="关注“郑州大学网络管理中心”微信公众号可提醒健康打卡";
+                // document.getElementById("warning").style.color="#666666";
+                document.getElementById("gov").style.display="none";
+            }
+            else{
+                document.getElementById("init").style.display="none";
+                document.getElementById("bak_1").style.display="block";
+                color1 = color_in1;
+                color2 = color_in2;
+                color3 = color_in3;
+                place1 = "主校区大门东门.";
+                place2 = "入口";
+                // document.getElementById("warning").innerHTML="提醒：未检索到你今日出校记录";
+                // document.getElementById("warning").style.color="#FF0000";
+                document.getElementById("gov").style.display="block";
+            }
+
+            //账户判定人
+            if(stu_username == "liuwei"){
+                stu_name = "刘威";
+                stu_faculty = "水利土木学院";
+                stu_picture = "1.jpg"
+            }
+            if(stu_username == "zhangqian"){
+                stu_name = "张倩 ";
+                stu_faculty = "管理学院";
+                stu_picture = "2.jpg"
+            }
+
+            //下面判定数字
+            if(number5 !=""){
+                number_picture="https://jksb.v.zzu.edu.cn/imagesss/title316_"+number5+".png";
+            }
+            document.getElementById("stu").innerHTML= stu_faculty+"."+stu_name;
+            document.getElementById("place1").innerHTML=place1;
+            document.getElementById("place2").innerHTML=place2;
+            document.getElementById("stu_picture").src=stu_picture;
+            document.getElementById('number_picture').style.background="url(" + number_picture +")";
+            document.getElementById('bian92a').style.backgroundColor=color2;
+            document.getElementById('bian92b1').style.backgroundColor=color2;
+            document.getElementById('bian92b2').style.backgroundColor=color2;
+            document.getElementById('bian92c').style.backgroundColor=color2;
+            document.getElementById('place2').style.backgroundColor=color3;
+            document.getElementById('place2').style.color=color4;
+            document.getElementById("datetimenow").innerHTML =  "(" + data_month + "月" + data_day + "日" +" " + data_hour + ":" + data_min +" 获取)" ;
+            // document.getElementById('Date_hesuan').innerHTML= "<br>" + "最近一次核酸结果：" + "<br>" + data_year_pre + "-" + data_month_pre +"-" + data_day_pre;
+
+            var tt1=598;tt2=0;tt3=0;
+
+            setInterval(function(){
+                tt1--;
+                if (tt1>=0){
+                    if ((tt1%2)==1){
+                        document.getElementById('bian92a').style.backgroundColor=color1;
+                        document.getElementById('bian92b1').style.backgroundColor=color1;
+                        document.getElementById('bian92b2').style.backgroundColor=color1;
+                        document.getElementById('bian92c').style.backgroundColor=color1;
+                    }else{
+                        document.getElementById('bian92a').style.backgroundColor=color2;
+                        document.getElementById('bian92b1').style.backgroundColor=color2;
+                        document.getElementById('bian92b2').style.backgroundColor=color2;
+                        document.getElementById('bian92c').style.backgroundColor=color2;
+                    }
+                    tt2=tt1 % 60;
+                    tt3=(tt1-tt2)/60;
+//        document.getElementById("tim317").innerHTML=tt3+"分"+tt2+"秒";
+                }else{}
+            },1000);
+        };
+
+        document.getElementById("btngov1").onclick=function () {
+            window.location.href="https://safetrip.zhengzhou.gov.cn:20021/mobile/index.html?sqid=202003041100460076&amp;lx=13&amp;orgid=1398";
+        }
+    }
+
+
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+<div id="init" style="display: block;">
+    <div style="WIDTH: 100%; HEIGHT: 45px;background:url(https://jksb.v.zzu.edu.cn/imagesss/bar_jksb2022.png);"></div>
+    <div class="mt_2"></div>
+    <div id="mt_5">
+        <div style="WIDTH: 100%; HEIGHT: 6px;"></div>
+        <div class="mt_3">
+            <div class="mt_3a"></div>
+            <div class="mt_3b">用户号</div>
+            <div class="mt_3c"><input type="text" id="stu_username" name="uid" size="20" class="urls6h" tabindex="0" ></div>
+            <div class="mt_3d"></div>
+        </div>
+        <div class="mt_3">
+            <div class="mt_3a"></div>
+            <div class="mt_3b">密　码</div>
+            <div class="mt_3c"><input type="password" id="stu_password" name="upw" size="20" class="urls6h" tabindex="1" value=""></div>
+            <div class="mt_3d"></div>
+        </div>
+        <div class="mt_3">
+            <div class="mt_3a"></div>
+            <div class="mt_3b"></div>
+            <div class="mt_3c">
+
+            </div>
+            <div class="mt_3d"></div>
+        </div>
+        <div class="mt_3">
+            <div class="mt_3e"><input type="button" id="btnlogin1" value="进入健康状况上报平台" name="smbtn" class="urls6h" tabindex="3"></div>
+        </div>
+        <div class="mt_4">
+            　　说明：教职工使用校园卡号、学生使用学号作为用户号，使用统一身份认证平台的密码；<br>
+            　　在岗不在编人员和其他人员使用专门办理的账号、访客使用手机号作为用户号，密码为身份证后八位。<br>
+            　　<br>
+        </div>
+    </div>
+    <div class="mt_2"></div>
+<!--    <div class="mt_6" id ="warning">本界面仅供学习使用，请勿用于其他用途(9月22号)</div>-->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <input type="text" id="number5" name="uid" size="20" class="urls6h" tabindex="0" >
+    <div>以下仅供开发者调试</div>
+    <input type="file" onchange="changepic(this)" id="file" style="display:block"/>
+
+</div>
+
+<div id="bak_1" style="display: none;" >
+    <!--一.通行码图片-->
+    <div id ="number_picture" style="WIDTH: 100%; HEIGHT: 88px;background:url(https://jksb.v.zzu.edu.cn/imagesss/title316_83833.png);"></div>
+
+    <div id="suofang">
+        <!--线-->
+        <div style="width:100%;height:7px;BACKGROUND-IMAGE: url(split5.png)"></div>
+<!--        <hr align="center" width="330" color="#DCDCDC" size="1/">-->
+
+        <!--二.主体-->
+        <div style="WIDTH: 100%; HEIGHT: 90px;">
+            <div style="width:100%;height:6px;text-align:left;"></div>
+            <!--2.2 个人信息-->
+            <div id="tubiao" style="width:100%;min-height:26px;line-height:26px;font-size:16px;color:#00c;font-weight:500;font-family:黑体;background:url(https://jksb.v.zzu.edu.cn/imagesss/sf_sheng3.png)">
+                <!--院系姓名-->
+                <span id="stu" style="color:#00a">管理学院.sss</span>
+
+                <!--切换账号按钮-->
+                <a href="login1.html"><span style="font-size:12px;color:#00c;">〖切换账号〗</span></a>　
+
+                <!--出入地点-->
+                <br><span id="place1">主校区大门东门.</span><span id="place2" style="color:#ff0">入口</span>
+
+                <!--出入身份-->
+                <br>身份：<span id="stu_id">批准出入校园学生</span><span id="datetimenow" style="font-size:12px;color:#333;">(05月25日 02:03 获取)</span>
+                <br>
+                <!--                    <span style="font-size:12px;color:#f00" id="warning">提醒：未检测到你今日出校记录</span>-->
+                <span>    </span>
+<!--                <span class="bb2" id="Date_hesuan">最近一次核酸结果：2022-09-04</span>-->
+<!--                <span>  </span>-->
+<!--                <span class="bb3">新冠疫苗接种3剂次</span>-->
+
+            </div>
+
+            <!--2.3 正方形信息-->
+            <div>
+                <!--正方形上框-->
+                <div style="width: 100%; height: 15px;" id="bian92a"></div>
+                <div style="width:100%;height:280px;">
+                    <!--正方形左框-->
+                    <div style="width: 15px; height: 100%; float: left;" id="bian92b1"></div>
+                    <!--人物照片-->
+                    <div style="width:320px;height:100%;float:left;text-align:center;">
+                        <img id="stu_picture" src="" style="height:280px;border:0px">
+                    </div>
+                    <!--正方形右框-->
+                    <div style="width: 14px; height: 100%; float: right;" id="bian92b2"></div>
+                </div>
+                <!--正方形下框-->
+                <div style="width: 100%; height: 15px;" id="bian92c"></div>
+
+
+                <!--线-->
+                <div style="width:100%;height:7px;BACKGROUND-IMAGE: url(split5.png)"></div>
+
+                <!--健康码-->
+                <div id="gov" style="width:100%;height:123px;display: block;">
+                    <div style="width:100%;height:80px;">
+                        <div class="hes1" id="Date_hesuan"><br>核酸检测结果<br>24小时阴性</div>
+                        <div style="width:20px;height:100%;float:left"></div>
+                        <div class="yim1"><br>新冠疫苗接种<br>3剂次</div>
+                        <div style="width:2px;height:100%;float:right"></div>
+                    </div>
+<!--                    <div style="width:100%;height:30px;line-height:15px;font-size:12px;color:#777;text-align:center" id="msg11b">-->
+<!--                        <span style="color:#00a">定位主校区东大门入口附近</span>　-->
+<!--                        <span style="color:#00c">扫码在设定区域内</span>　-->
+<!--                        <span style="color:#909">未获取到郑好办防疫数据</span>-->
+<!--                    </div>//-->
+                    <!--线-->
+                    <div class="bar916">
+                        <div style="width:50%;height:100%;float:left;font-size:12px;color:#666;line-height:20px;" id="msg11b">
+                            <span style="color: #00e">郑好办防疫数据获取成功</span></div>
+                        <div style="width:48%;height:100%;float:right;font-size:12px;color:#666;line-height:20px;">
+                            <span style="color: #00a" id="msg11c">定位主校区大门东门附近</span>
+                            <span style="color: #00a">扫码在设定区域内</span></div>
+                    </div>
+
+                    <div style="width:100%;height:7px;BACKGROUND-IMAGE: url(split5.png)"></div>
+                </div>
+
+
+                <!--2.4 末尾信息-->
+                <div style="width:100%;min-height:18px;line-height:18px;font-size:12px;color:#666;text-align:center">郑州大学疫情防控领导小组、保卫处、信息化办公室</div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+
+
+
+</body></html>
